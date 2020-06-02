@@ -34,7 +34,7 @@ for i = 1:5
 end
 
 A = [A [0;0;KxwList(6);0;0;0;0;0;0;0;0;0;0;0;0]];
-B = [A;[0 0 KwxList(6) 0 0 0 0 0 0 0 0 0 0 0 0 R1List(6)]];
+B = [A;[0 0 KwxList(6) 0 0 0 0 0 0 0 0 0 0 0 0 -R1List(6)-KxwList(6)]];
 B(abs(B)<1e-15) = 0;
 B(isnan(B)) = 0;
 

@@ -36,7 +36,7 @@ end
 Rrfc = w_1^2*pi*g;
 
 A = [A [0;0;KxwList(6);0;0;0;0;0;0;0;0;0;0;0;0]];
-A = [A;[0 0 KwxList(6) 0 0 0 0 0 0 0 0 0 0 0 0 -1/T1List(6)-Rrfc]];
+A = [A;[0 0 KwxList(6) 0 0 0 0 0 0 0 0 0 0 0 0 -R1List(6)-Rrfc-KxwList(6)]];
 A(abs(A)<1e-15) = 0;
 A(isnan(A)) = 0;
 
